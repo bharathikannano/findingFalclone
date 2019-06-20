@@ -16,6 +16,5 @@ step 3: Run the repo
 
 
 ### Build creation steps
-
-Dev Build           ```npm run-script build```
-Production Build    ```
+          
+```npm run-script build```
