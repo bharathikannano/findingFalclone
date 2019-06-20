@@ -1,6 +1,6 @@
 # findingFalclone
 
-### Execution Steps`
+### Execution Steps
 
 Step 1: Clone the repo
 ```git clone https://github.com/bharathikannano/findingFalclone.git```
@@ -13,3 +13,9 @@ Step 2: Install Dependencies
 
 step 3: Run the repo
 ```yarn start   or npm start```
+
+
+### Build creation steps
+
+Dev Build           ```npm run-script build```
+Production Build    ```

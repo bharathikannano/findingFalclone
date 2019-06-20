@@ -11,6 +11,7 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, 'dist'),
 		filename: 'bundle.js',
+		publicPath: '/'
 	},
 	resolve: {
 		modules: ['node_modules', './src'],
@@ -40,7 +41,8 @@ module.exports = {
 	plugins: [
         new ExtractTextPlugin("bundle.css"),
         new HtmlWebpackPlugin({
-            hash: true,
+			hash: true,
+			template: './src/index.html',
             filename: './index.html'
         })
 	],

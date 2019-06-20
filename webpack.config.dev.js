@@ -5,7 +5,7 @@ const webpackCommonConfig = require('./webpack.config.common');
 
 module.exports = merge(webpackCommonConfig, {
 	output: {
-		publicPath: '/dist/',
+		publicPath: './',
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
