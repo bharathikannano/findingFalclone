@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
 	<script>
-		function modalHandler(modal){
-			var modal = document.getElementById("myModal");
+		function modalHandler(myModal){
+			//alert(myModal);
+			var modal = document.getElementById(myModal);
 			if(modal.style.display)
 				if(modal.style.display == "block")
 					modal.style.display="none";
@@ -35,7 +36,7 @@
 				<img class = "imgprogress" src="progress.gif" alt="Italian Trulli"/>
 			</div>
 		</div>
-		<div id="myModal" class="modal">
+		<div id="storyModal" class="overlay modal">
 			<!-- Modal content -->
 			<div class="modal-content">
 				<span onclick="modalHandler('storyModal')" class="close">&times;</span>
@@ -43,7 +44,7 @@
 			</div>
 		</div>
 		
-		<div id="myModal" class="modal">
+		<div id="planetModal" class="overlay modal">
 			<!-- Modal content -->
 			<div class="modal-content">
 				<span onclick="modalHandler('planetModal')" class="close">&times;</span>
@@ -51,7 +52,7 @@
 			</div>
 		</div>
 		
-		<div id="myModal" class="modal">
+		<div id="vehicleModal" class="overlay modal">
 			<!-- Modal content -->
 			<div class="modal-content">
 				<span onclick="modalHandler('vehicleModal')" class="close">&times;</span>
