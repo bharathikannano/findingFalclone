@@ -1,0 +1,139 @@
+.mydivclass{
+	border-radius: 25px;
+	margin-top:5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	background: #fff4df;
+	border: 5px solid #fbf0b7;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.mydivclass button {
+  background-color: #40B1EF;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.mydivclass label {
+  display: block;
+  color: #1A6528;
+  font-weight: bold;
+  font-size: larger;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.float-left{
+	float: center;
+}
+
+.float-right{
+	float: right;
+}
+.float-center{
+	float: center;
+}
+
+.headerDiv{
+	padding: 8px;
+	padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 18px;
+	text-align:left;
+}
+.selectionDiv{
+	padding: 8px;
+	padding-right: 3%;
+    padding-left: 3%;
+	text-align:left;
+	padding-top: 40px;
+}
+
+.inprogress{
+	text-align:center;
+	padding: 8px;
+	padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 18px;
+	text-align:left;
+}
+
+.imgprogress{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	clip-path: inset(75px 6px 75px 6px);
+	margin-block-start: -50px;
+	margin-block-end: -50px;
+	padding-left: 40%;
+	padding-right: 40%;
+	margin-left: 5px;
+    margin-right: -5px;
+}
+
+#progressDiv .search {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 32px;  
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: larger;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

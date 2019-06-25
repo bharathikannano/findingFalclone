@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<script>
+		function modalHandler(modal){
+			var modal = document.getElementById("myModal");
+			if(modal.style.display)
+				if(modal.style.display == "block")
+					modal.style.display="none";
+				else
+					modal.style.display="block";
+			else
+				modal.style.display="block";
+		}
+	</script>
+	<head>
+		<meta charset="utf-8"/>
+		<!-- TemplateBeginEditable name="doctitle" -->
+		<title>Mock UI</title>
+		<link rel = "stylesheet" type = "text/css" href = "mockstyle.css" />
+	</head>
+	<body>		
+		<div id="BaseDiv" class="mydivclass">
+			<div class="headerDiv">
+				<label class="float-center" type="label">Finding Falcone</label>
+				<button class="float-right" type="button">SignIn!</button>
+				<button class="float-right" type="button">SignUp!</button>
+			</div>
+			<div class="selectionDiv">
+				<button onclick="modalHandler('storyModal')" type="button">Story !</button>
+				<button onclick="modalHandler('planetModal')" type="button">Planets!</button>
+				<button onclick="modalHandler('vehicleModal')" type="button">Vehicles!</button>
+			</div>
+			<div id="progressDiv" >  
+				<button  class="search" type="button">Search!</button>
+				<img class = "imgprogress" src="progress.gif" alt="Italian Trulli"/>
+			</div>
+		</div>
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span onclick="modalHandler('storyModal')" class="close">&times;</span>
+				<p>Some text in the storyModal..</p>
+			</div>
+		</div>
+		
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span onclick="modalHandler('planetModal')" class="close">&times;</span>
+				<p>Some text in the planetModal..</p>
+			</div>
+		</div>
+		
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span onclick="modalHandler('vehicleModal')" class="close">&times;</span>
+				<p>Some text in the vehicleModal..</p>
+			</div>
+		</div>
+		
+	</body>
+</html>
