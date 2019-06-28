@@ -25,9 +25,10 @@
 }
 
 .mydivclass label {
+  
   display: block;
-  color: #1A6528;
-  font-weight: bold;
+  color: rgb(63, 12, 25);
+  font-weight: bolder;
   font-size: larger;
   padding-left: 10px;
   padding-right: 10px;
@@ -47,14 +48,14 @@
 .headerDiv{
 	padding: 8px;
 	padding-right: 3%;
-    padding-left: 3%;
-    padding-top: 18px;
+  padding-left: 3%;
+  padding-top: 18px;
 	text-align:left;
 }
 .selectionDiv{
 	padding: 8px;
 	padding-right: 3%;
-    padding-left: 3%;
+  padding-left: 3%;
 	text-align:left;
 	padding-top: 40px;
 }
@@ -79,7 +80,7 @@
 	padding-left: 40%;
 	padding-right: 40%;
 	margin-left: 5px;
-    margin-right: -5px;
+  margin-right: -5px;
 }
 
 #progressDiv .search {
@@ -119,11 +120,53 @@
 .modal-content {
 	background-color: #fefefe;
 	margin: 5% 10%;
-	padding: 13% 2%;
+	padding: 5% 2%;
 	border: 1px solid #888;
 	border-radius: 20px;
-    display: block;
+  display: block;
 }
+
+.eagle-logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	padding-left: auto;
+	padding-right: auto;
+
+}
+.vehicle-logo{
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+  width: 70%;
+	padding-left: auto;
+	padding-right: auto;
+	
+}
+.planet-logo{
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	padding-left: auto;
+	padding-right: auto;
+	margin-left: 5px;
+  margin-right: -5px;
+}
+.story-content{
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 75%;
+	margin-left: auto;
+  margin-right: auto; 
+  font-size: 20px;
+  align-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
 
 /* The Close Button */
 .close {
@@ -131,7 +174,7 @@
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
-	margin-top: -152px;
+	margin-top: -70px;
 }
 
 .close:hover,
