@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a7e751d8db18e68a5d7d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "bf6a3c4dacc7bf1fb4f8"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -722,7 +722,7 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(3)(__webpack_require__.s = 3);
+/******/ 	return hotCreateRequire(4)(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -735,7 +735,7 @@
 if (false) {
   module.exports = require('./cjs/react.production.min.js');
 } else {
-  module.exports = __webpack_require__(4);
+  module.exports = __webpack_require__(5);
 }
 
 
@@ -853,7 +853,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (true) {
-  var ReactPropTypesSecret = __webpack_require__(5);
+  var ReactPropTypesSecret = __webpack_require__(6);
   var loggedTypeFailures = {};
   var has = Function.call.bind(Object.prototype.hasOwnProperty);
 
@@ -947,27 +947,32 @@ module.exports = checkPropTypes;
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scss_style_scss__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scss_style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__scss_style_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App_css__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__App_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App__ = __webpack_require__(14);
 
 
 
 
-var title = 'My Minimal React Webpack Babel Setup';
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__App__["a" /* default */], null), document.getElementById('root'));
 module.hot.accept();
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2875,7 +2880,7 @@ module.exports = react;
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2894,7 +2899,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2934,12 +2939,12 @@ if (false) {
   checkDCE();
   module.exports = require('./cjs/react-dom.production.min.js');
 } else {
-  module.exports = __webpack_require__(7);
+  module.exports = __webpack_require__(8);
 }
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2963,8 +2968,8 @@ if (true) {
 var React = __webpack_require__(0);
 var _assign = __webpack_require__(1);
 var checkPropTypes = __webpack_require__(2);
-var scheduler = __webpack_require__(8);
-var tracing = __webpack_require__(11);
+var scheduler = __webpack_require__(9);
+var tracing = __webpack_require__(12);
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -24224,7 +24229,7 @@ module.exports = reactDom;
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24233,12 +24238,12 @@ module.exports = reactDom;
 if (false) {
   module.exports = require('./cjs/scheduler.production.min.js');
 } else {
-  module.exports = __webpack_require__(9);
+  module.exports = __webpack_require__(10);
 }
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24942,10 +24947,10 @@ exports.unstable_getFirstCallbackNode = unstable_getFirstCallbackNode;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(11)))
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports) {
 
 var g;
@@ -24972,7 +24977,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24981,12 +24986,12 @@ module.exports = g;
 if (false) {
   module.exports = require('./cjs/scheduler-tracing.production.min.js');
 } else {
-  module.exports = __webpack_require__(12);
+  module.exports = __webpack_require__(13);
 }
 
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25416,20 +25421,15 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 
 
 /***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
 /* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_css__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_css__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__App_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ModalHandler__ = __webpack_require__(15);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25451,6 +25451,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var App =
 /*#__PURE__*/
 function (_Component) {
@@ -25466,8 +25467,80 @@ function (_Component) {
     key: "render",
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "App"
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, "Hi"));
+        className: "App-base"
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        id: "BaseDiv",
+        className: "mydivclass"
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        "class": "headerDiv"
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", {
+        "class": "float-center",
+        type: "label"
+      }, "Finding Falcone"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        "class": "float-right",
+        type: "button"
+      }, "Sign in"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        "class": "float-right",
+        type: "button"
+      }, "Sign up")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        "class": "selectionDiv"
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        onclick: Object(__WEBPACK_IMPORTED_MODULE_2__ModalHandler__["a" /* default */])('storyModal'),
+        type: "button"
+      }, "Story"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        onclick: "modalHandler('planetModal')",
+        type: "button"
+      }, "Planets"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        onclick: "modalHandler('vehicleModal')",
+        type: "button"
+      }, "Vehicles")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        id: "progressDiv"
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        "class": "search",
+        type: "button"
+      }, "Search!"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+        "class": "imgprogress",
+        src: "progress.gif",
+        alt: "Italian Trulli"
+      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        id: "storyModal",
+        "class": "overlay modal"
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        "class": "modal-content"
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
+        onclick: "modalHandler('storyModal')",
+        "class": "close"
+      }, "\xD7"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+        "class": "eagle-logo",
+        src: "Eagle.JPG",
+        alt: "Italian Trulli"
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        "class": "story-content"
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, "Our problem is set in the planet of Lengaburu\u2026in the distant distant galaxy of Tara B."), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, " After the recent war with neighbouring planet Falicornia, King Shan has exiled the Queen of Falicornia for 15 years."), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, "Queen Al Falcone is now in hiding."), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, " But if King Shan can find her before the years are up, she will be exiled for another 15 years\u2026."), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, "King Shan has received intelligence that Al Falcone is in hiding in one of these 6 planets - DonLon, Enchai, Jebing, Sapir, Lerbin & Pingasor. However he has limited resources at his disposal & can send his army to only 4 of these planets.")))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        id: "planetModal",
+        "class": "overlay modal"
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        "class": "modal-content"
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
+        onclick: "modalHandler('planetModal')",
+        "class": "close"
+      }, "\xD7"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+        "class": "planet-logo",
+        src: "planets.png",
+        alt: "Italian Trulli"
+      }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        id: "vehicleModal",
+        "class": "overlay modal"
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        "class": "modal-content"
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
+        onclick: "modalHandler('vehicleModal')",
+        "class": "close"
+      }, "\xD7"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+        "class": "vehicle-logo",
+        src: "vehicles.png",
+        alt: "Italian Trulli"
+      })))));
     }
   }]);
 
@@ -25478,9 +25551,20 @@ function (_Component) {
 
 /***/ }),
 /* 15 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+"use strict";
+var modalHandler = function modalHandler(myModal) {
+  var modal = document.getElementById(myModal);
+
+  if (modal.style.display) {
+    if (modal.style.display == "block") {
+      modal.style.display == "none";
+    } else modal.style.display == "block";
+  } else modal.style.display == "block";
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (modalHandler);
 
 /***/ })
 /******/ ]);
