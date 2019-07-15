@@ -15,10 +15,10 @@ render(){
 				<button class="float-right" type="button">Sign up</button>
 			</div>
             <div class="selectionDiv">
-				<button onclick={modalHandler('storyModal')} type="button">Story</button>
+				<button onclick={() => modalHandler('storyModal')} type="button">Story</button>
 				
-				<button onclick="modalHandler('planetModal')" type="button">Planets</button>
-				<button onclick="modalHandler('vehicleModal')" type="button">Vehicles</button>
+				<button onclick={() => modalHandler('planetModal')} type="button">Planets</button>
+				<button onclick={() => modalHandler('vehicleModal')} type="button">Vehicles</button>
 			</div>
 			<div id="progressDiv" >  
 				<button  class="search" type="button">Search!</button>
@@ -27,7 +27,7 @@ render(){
             <div id="storyModal" class="overlay modal">
 
 			<div class="modal-content">
-				<span onclick="modalHandler('storyModal')" class="close">&times;</span>
+				<span onclick={() => modalHandler('storyModal')} class="close">&times;</span>
 				<img class = "eagle-logo" src="Eagle.JPG" alt="Italian Trulli"/>
 				<div class="story-content">
 				
@@ -54,7 +54,7 @@ render(){
 		<div id="planetModal" class="overlay modal">
 		
 			<div class="modal-content">
-				<span onclick="modalHandler('planetModal')" class="close">&times;</span>
+				<span onclick={() => modalHandler('planetModal')} class="close">&times;</span>
 				<img class = "planet-logo" src="planets.png" alt="Italian Trulli"/>
 				
 			</div>
@@ -63,7 +63,7 @@ render(){
 		<div id="vehicleModal" class="overlay modal">
 			
 			<div class="modal-content">
-				<span onclick="modalHandler('vehicleModal')" class="close">&times;</span>
+				<span onclick={() => modalHandler('vehicleModal')} class="close">&times;</span>
 				<img class = "vehicle-logo" src="vehicles.png" alt="Italian Trulli"/>
 				
 			</div>
