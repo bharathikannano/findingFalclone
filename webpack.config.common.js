@@ -7,7 +7,9 @@ const port = process.env.PORT || 3000;
 
 module.exports = {
 	context: __dirname,
-	entry: './src/index.js',
+	entry: [
+		"./src/index.js"
+	],
 	output: {
 		path: path.join(__dirname, 'dist'),
 		filename: 'bundle.js',
@@ -42,13 +44,12 @@ module.exports = {
         new ExtractTextPlugin("bundle.css"),
         new HtmlWebpackPlugin({
 			hash: true,
-			template: './src/index.html',
-            filename: './index.html'
+			template: './src/index.html'
         })
 	],
 	devServer: {
 		port,
 		historyApiFallback: true,
-		publicPath: '/dist/',
+		publicPath: '/',
 	}
 }

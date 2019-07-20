@@ -9,27 +9,27 @@ render(){
 
         <div className="App-base">
             <div id="BaseDiv" className="mydivclass">
-			<div class="headerDiv">
-				<label class="float-center" type="label">Finding Falcone</label>
-				<button class="float-right" type="button">Sign in</button>
-				<button class="float-right" type="button">Sign up</button>
+			<div className="headerDiv">
+				<label className="float-center" type="label">Finding Falcone</label>
+				<button className="float-right" type="button">Sign in</button>
+				<button className="float-right" type="button">Sign up</button>
 			</div>
-            <div class="selectionDiv">
-				<button onclick={() => modalHandler('storyModal')} type="button">Story</button>
+            <div className="selectionDiv">
+				<button onClick={() => modalHandler('storyModal')} type="button">Story</button>
 				
-				<button onclick={() => modalHandler('planetModal')} type="button">Planets</button>
-				<button onclick={() => modalHandler('vehicleModal')} type="button">Vehicles</button>
+				<button onClick={() => modalHandler('planetModal')} type="button">Planets</button>
+				<button onClick={() => modalHandler('vehicleModal')} type="button">Vehicles</button>
 			</div>
 			<div id="progressDiv" >  
-				<button  class="search" type="button">Search!</button>
-				<img class = "imgprogress" src="progress.gif" alt="Italian Trulli"/>
+				<button  className="search" type="button">Search!</button>
+				<img className= "imgprogress" src="progress.gif" alt="Italian Trulli"/>
 			</div>
-            <div id="storyModal" class="overlay modal">
+            <div id="storyModal" className="overlay modal">
 
-			<div class="modal-content">
-				<span onclick={() => modalHandler('storyModal')} class="close">&times;</span>
-				<img class = "eagle-logo" src="Eagle.JPG" alt="Italian Trulli"/>
-				<div class="story-content">
+			<div className="modal-content">
+				<span onClick={() => modalHandler('storyModal')} className="close">&times;</span>
+				<img className= "eagle-logo" src="Eagle.JPG" alt="Italian Trulli"/>
+				<div className="story-content">
 				
 				<p>Our problem is set in the planet of Lengaburu…in the distant
 					distant galaxy of Tara B.</p>
@@ -51,20 +51,20 @@ render(){
 			</div>
 		</div>
 		
-		<div id="planetModal" class="overlay modal">
+		<div id="planetModal" className="overlay modal">
 		
-			<div class="modal-content">
-				<span onclick={() => modalHandler('planetModal')} class="close">&times;</span>
-				<img class = "planet-logo" src="planets.png" alt="Italian Trulli"/>
+			<div className="modal-content">
+				<span onClick={() => modalHandler('planetModal')} className="close">&times;</span>
+				<img className= "planet-logo" src="planets.png" alt="Italian Trulli"/>
 				
 			</div>
 		</div>
 		
-		<div id="vehicleModal" class="overlay modal">
+		<div id="vehicleModal" className="overlay modal">
 			
-			<div class="modal-content">
-				<span onclick={() => modalHandler('vehicleModal')} class="close">&times;</span>
-				<img class = "vehicle-logo" src="vehicles.png" alt="Italian Trulli"/>
+			<div className="modal-content">
+				<span onClick={() => modalHandler('vehicleModal')} className="close">&times;</span>
+				<img className= "vehicle-logo" src="vehicles.png" alt="Italian Trulli"/>
 				
 			</div>
         </div>
