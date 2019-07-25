@@ -13,38 +13,34 @@ constructor(props,context) {
 		showPlanet:false,
 		showVehicle:false
     }
-	
-	this.storyModalCallback = this.modalHandler.bind(this, "storyModal"),
-	this.planetModalCallback = this.modalHandler.bind(this, "planetModal"),
-	this.vehicleModalCallback = this.modalHandler.bind(this, "vehicleModal")
 }	
 
-handleClose(){
-	this.setState({show: null});
+toggleStoryModal(){
+	const show = this.state.showStory;
+	this.setState({showStory:!show});
 }
-handleShow(id){
-	this.setState({show: id});
-}
-	
-	
-modalHandler (myModal){
 
-	if(myModal=="storyModal"){
-		this.setState({
-            showStory: !this.showStory
-        });
-    }else if(myModal=="planetModal"){
-		this.setState({
-            showPlanet: !this.showPlanet
-        });
-    }else if(myModal=="vehicleModal"){
-		this.setState({
-            showVehicle: !this.showVehicle
-        });
-    }
+togglePlanetModal(){
+	const show = this.state.showPlanet;
+	this.setState({showPlanet:!show});
+}
+
+toggleVehicleModal(){
+	const show = this.state.showVehicle;
+	this.setState({showVehicle:!show});
 }
 render(){
-	
+	let modal;
+	if(this.state.showStory){
+		modal = <StoryModal id="storyModal" show={this.state.showStory } close={this.toggleStoryModal.bind(this)} />
+	}
+	if(this.state.showPlanet){
+		modal = <PlanetModal id="planetModal" show={this.state.showPlanet } close={this.togglePlanetModal.bind(this)}/>
+	}
+	if(this.state.showVehicle){
+		modal = <VehicleModal id="vehicleModal" show={this.state.showVehicle } close={this.toggleVehicleModal.bind(this)}/>
+	}
+			
     return(
 
         <div className="App-base">
@@ -55,17 +51,15 @@ render(){
 				<button className="float-right" type="button">Sign up</button>
 			</div>
 			<div className="selectionDiv">
-				<button onClick={ () => this.modalHandler("storyModal").bind(this)} type="button">Story</button>
-				<button onClick={ () => this.modalHandler("planetModal").bind(this)} type="button">Planets</button>
-				<button onClick={ () => this.modalHandler("vehicleModal").bind(this)} type="button">Vehicles</button>
+				<button onClick={ () => this.toggleStoryModal()} type="button">Story</button>
+				<button onClick={ () => this.togglePlanetModal()} type="button">Planets</button>
+				<button onClick={ () => this.toggleVehicleModal()} type="button">Vehicles</button>
 			</div>
 			<div id="progressDiv" >  
 				<button  className="search" type="button">Search!</button>
 				<img className= "imgprogress" src="progress.gif" alt="Italian Trulli"/>
 			</div>
-			{this.state.isShowing ?	<StoryModal id="storyModal" show={this.state.showStory } close={this.storyModalCallback} />:null}
-			<PlanetModal id="planetModal" show={this.state.showPlanet } close={this.planetModalCallback}/>
-			<VehicleModal id="vehicleModal" show={this.state.showVehicle } close={this.vehicleModalCallback}/>
+			{modal}
 		</div>
 	</div>
 

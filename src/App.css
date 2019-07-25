@@ -191,5 +191,5 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(128,128,128,0.5); /* color */
-  display: none; /* making it hidden by default */
+  display: block; /* making it hidden by default */
 }

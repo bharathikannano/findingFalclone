@@ -5,42 +5,13 @@ class StoryModal extends Component{
 	
 	constructor(props) {
 		super(props)
-		this.state ={
-		show:null,
-		}
 	}
-	/*
-	<div>
-            <div className="modal-wrapper"
-                style={{
-                    transform: props.show ? 'translateY(0vh)' : 'translateY(-100vh)',
-                    opacity: props.show ? '1' : '0'
-                }}>
-                <div className="modal-header">
-                    <h3>Modal Header</h3>
-                    <span className="close-modal-btn" onClick={props.close}>×</span>
-                </div>
-                <div className="modal-body">
-                    <p>
-                        {props.children}
-                    </p>
-                </div>
-                <div className="modal-footer">
-                    <button className="btn-cancel" onClick={props.close}>CLOSE</button>
-                    <button className="btn-continue">CONTINUE</button>
-                </div>
-            </div>
-        </div>
-		*/
 	
 render(){
 
 		return(
 		
-				<div id="storyModal" style={{display: this.props.show ? 'block' : 'none' }} style={{
-                    transform: this.props.show ? 'translateY(0vh)' : 'translateY(-100vh)',
-                    opacity: this.props.show ? '1' : '0'
-                }} className="overlay modal">
+				<div id="storyModal" className="overlay modal">
 
 				<div className="modal-content">
 
